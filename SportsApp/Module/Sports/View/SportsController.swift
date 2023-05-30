@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Reachability
 
 class SportsController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
    
@@ -13,6 +14,7 @@ class SportsController: UIViewController, UICollectionViewDelegate, UICollection
 
     @IBOutlet weak var sportsCollection: UICollectionView!
     var sportsArray : [String] = ["Football", "Basketball", "Cricket", "Tennis"]
+    let reachability = try! Reachability()
     override func viewDidLoad() {
         super.viewDidLoad()
         sportsCollection.dataSource = self
@@ -43,4 +45,25 @@ class SportsController: UIViewController, UICollectionViewDelegate, UICollection
         return cell!
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let reachability = try! Reachability()
+        if reachability.connection != .unavailable {
+            print("Network is available")
+            
+            let defaults = UserDefaults.standard
+            defaults.setValue(sportsArray[indexPath.row] ,forKey: "sportName")
+            self.performSegue(withIdentifier: "league", sender: nil)
+            
+        } else {
+            print("Network is not available")
+            //alert
+            let alert : UIAlertController = UIAlertController(title: "Internet Connection", message: "Check connection and try again", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel,handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
 }
