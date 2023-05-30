@@ -16,7 +16,6 @@ class NetworkManager: NetworkProtocol{
             
             switch response.result {
             case .success(let data):
-                print("Data Recieved")
                 handler(data)
             case .failure(let error):
                 print("Error: \(error)")
