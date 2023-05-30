@@ -20,7 +20,6 @@ class LeagueViewController: UIViewController , UITableViewDelegate  , UITableVie
         super.viewDidLoad()
         let defaults = UserDefaults.standard
         sportName = defaults.value(forKey:"sportName") as? String
-        print("/////////////\(String(describing: sportName))")
         table.delegate = self
         table.dataSource = self
         leaguesViewModel = LeaguesViewModel(sport: sportName.lowercased() )
@@ -61,15 +60,13 @@ class LeagueViewController: UIViewController , UITableViewDelegate  , UITableVie
        
         let reachability = try! Reachability()
         if reachability.connection != .unavailable {
-            print("Network is available")
-            
             let defaults = UserDefaults.standard
             defaults.setValue(leagues[indexPath.row].leagueKey ,forKey: "leagueID")
+            defaults.setValue(leagues[indexPath.row].leagueName ,forKey: "leagueName")
+            defaults.setValue(leagues[indexPath.row].leagueLogo ,forKey: "leagueLogo")
             self.performSegue(withIdentifier: "leagueDetails", sender: nil)
             
         } else {
-            print("Network is not available")
-            //alert
             let alert : UIAlertController = UIAlertController(title: "Internet Connection", message: "Check connection and try again", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel,handler: nil))
             self.present(alert, animated: true, completion: nil)
