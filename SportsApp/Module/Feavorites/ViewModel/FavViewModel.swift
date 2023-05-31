@@ -40,6 +40,6 @@ class FavouriteViewModel {
     
     func getSelectedLeague(leagueName: String, leagueKey: Int) -> LocalLeague{
         league = coreData.getLeagueFromLocal(leagueName: leagueName, leagueKey: leagueKey)
-        return league!
+        return league ?? LocalLeague(leagueKey: 0, leagueName: "", sportName: "", leagueLogo: "")
     }
 }

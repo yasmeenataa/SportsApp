@@ -15,13 +15,18 @@
 		041BA2F22A1D8B3700784BDB /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BA2F12A1D8B3700784BDB /* LeagueViewController.swift */; };
 		041BA2F52A1D8B7200784BDB /* LeagueViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BA2F42A1D8B7200784BDB /* LeagueViewCell.swift */; };
 		041BA3172A1D9CC600784BDB /* LeaguesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BA3162A1D9CC600784BDB /* LeaguesViewModel.swift */; };
+		0453E4A42A26B1E400CA06FD /* FakeNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E4A32A26B1E400CA06FD /* FakeNetwork.swift */; };
+		0453E4A82A26C14800CA06FD /* MockNewtworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E4A72A26C14800CA06FD /* MockNewtworkManager.swift */; };
+		0453E4AA2A26CDD100CA06FD /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E4A92A26CDD100CA06FD /* NetworkTest.swift */; };
+		0453E4AE2A26D91900CA06FD /* FakeCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E4AD2A26D91900CA06FD /* FakeCoreData.swift */; };
+		0453E4B02A26DBCB00CA06FD /* MockCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E4AF2A26DBCB00CA06FD /* MockCoreData.swift */; };
+		0453E4B22A26E9A400CA06FD /* FavViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E4B12A26E9A400CA06FD /* FavViewModelTests.swift */; };
 		0477DCB12A19647200861960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DCB02A19647200861960 /* AppDelegate.swift */; };
 		0477DCB32A19647200861960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DCB22A19647200861960 /* SceneDelegate.swift */; };
 		0477DCB82A19647200861960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477DCB62A19647200861960 /* Main.storyboard */; };
 		0477DCBB2A19647200861960 /* SportsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0477DCB92A19647200861960 /* SportsApp.xcdatamodeld */; };
 		0477DCBD2A19647500861960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477DCBC2A19647500861960 /* Assets.xcassets */; };
 		0477DCC02A19647500861960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477DCBE2A19647500861960 /* LaunchScreen.storyboard */; };
-		0477DCCB2A19647500861960 /* SportsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DCCA2A19647500861960 /* SportsAppTests.swift */; };
 		0477DCD52A19647500861960 /* SportsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DCD42A19647500861960 /* SportsAppUITests.swift */; };
 		0477DCD72A19647500861960 /* SportsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DCD62A19647500861960 /* SportsAppUITestsLaunchTests.swift */; };
 		04831B4D2A23CB7F0000F327 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831B4C2A23CB7F0000F327 /* FavTableViewCell.swift */; };
@@ -72,6 +77,13 @@
 		041BA2F12A1D8B3700784BDB /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		041BA2F42A1D8B7200784BDB /* LeagueViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewCell.swift; sourceTree = "<group>"; };
 		041BA3162A1D9CC600784BDB /* LeaguesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModel.swift; sourceTree = "<group>"; };
+		0453E4A32A26B1E400CA06FD /* FakeNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetwork.swift; sourceTree = "<group>"; };
+		0453E4A72A26C14800CA06FD /* MockNewtworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewtworkManager.swift; sourceTree = "<group>"; };
+		0453E4A92A26CDD100CA06FD /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		0453E4AB2A26D1E000CA06FD /* SportsApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SportsApp.xctestplan; sourceTree = "<group>"; };
+		0453E4AD2A26D91900CA06FD /* FakeCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCoreData.swift; sourceTree = "<group>"; };
+		0453E4AF2A26DBCB00CA06FD /* MockCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreData.swift; sourceTree = "<group>"; };
+		0453E4B12A26E9A400CA06FD /* FavViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewModelTests.swift; sourceTree = "<group>"; };
 		0477DCAD2A19647200861960 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477DCB02A19647200861960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0477DCB22A19647200861960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +93,6 @@
 		0477DCBF2A19647500861960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0477DCC12A19647500861960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0477DCC62A19647500861960 /* SportsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0477DCCA2A19647500861960 /* SportsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppTests.swift; sourceTree = "<group>"; };
 		0477DCD02A19647500861960 /* SportsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477DCD42A19647500861960 /* SportsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppUITests.swift; sourceTree = "<group>"; };
 		0477DCD62A19647500861960 /* SportsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -363,6 +374,27 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0453E4A22A26B1B600CA06FD /* NetworkTest */ = {
+			isa = PBXGroup;
+			children = (
+				0453E4A32A26B1E400CA06FD /* FakeNetwork.swift */,
+				0453E4A72A26C14800CA06FD /* MockNewtworkManager.swift */,
+				0453E4A92A26CDD100CA06FD /* NetworkTest.swift */,
+				0453E4AB2A26D1E000CA06FD /* SportsApp.xctestplan */,
+			);
+			path = NetworkTest;
+			sourceTree = "<group>";
+		};
+		0453E4AC2A26D8C900CA06FD /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				0453E4AD2A26D91900CA06FD /* FakeCoreData.swift */,
+				0453E4AF2A26DBCB00CA06FD /* MockCoreData.swift */,
+				0453E4B12A26E9A400CA06FD /* FavViewModelTests.swift */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
 		0477DCA42A19647200861960 = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +437,8 @@
 		0477DCC92A19647500861960 /* SportsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0477DCCA2A19647500861960 /* SportsAppTests.swift */,
+				0453E4AC2A26D8C900CA06FD /* CoreDataTest */,
+				0453E4A22A26B1B600CA06FD /* NetworkTest */,
 			);
 			path = SportsAppTests;
 			sourceTree = "<group>";
@@ -716,7 +749,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0477DCCB2A19647500861960 /* SportsAppTests.swift in Sources */,
+				0453E4A82A26C14800CA06FD /* MockNewtworkManager.swift in Sources */,
+				0453E4AA2A26CDD100CA06FD /* NetworkTest.swift in Sources */,
+				0453E4B22A26E9A400CA06FD /* FavViewModelTests.swift in Sources */,
+				0453E4A42A26B1E400CA06FD /* FakeNetwork.swift in Sources */,
+				0453E4B02A26DBCB00CA06FD /* MockCoreData.swift in Sources */,
+				0453E4AE2A26D91900CA06FD /* FakeCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
