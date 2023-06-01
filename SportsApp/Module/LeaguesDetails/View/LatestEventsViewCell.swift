@@ -16,4 +16,11 @@ class LatestEventsViewCell: UICollectionViewCell {
     @IBOutlet weak var teamOneName: UILabel!
     
     @IBOutlet weak var teamOneImage: UIImageView!
+    
+    override func layoutSubviews() {
+            super.layoutSubviews()
+            layer.cornerRadius = 10
+            layer.borderWidth = 1
+            layer.borderColor = UIColor.black.cgColor
+        }
 }

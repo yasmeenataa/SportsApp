@@ -20,14 +20,18 @@ class SportsController: UIViewController, UICollectionViewDelegate, UICollection
         sportsCollection.dataSource = self
         sportsCollection.delegate = self
         self.navigationItem.title = "Sports"
-        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: sportsCollection.frame.size.width/2, height: 100)
+        sportsCollection.collectionViewLayout = layout
       
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width:  (UIScreen.main.bounds.size.width/2 - 25), height: 180)
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+           return 0.0
+       }
 
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
