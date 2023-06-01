@@ -167,18 +167,18 @@ class LeagueDetailsViewController: UIViewController  ,UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.TeamsCollection {
-            return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.height)
+            return CGSize(width: collectionView.frame.width / 2-9, height: collectionView.frame.height-21)
         }
         else if collectionView == self.LetestCollection {
-            return CGSize(width: collectionView.frame.width , height: collectionView.frame.height/2)
+            return CGSize(width: collectionView.frame.width , height: collectionView.frame.height/2-15)
         }
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height )
+        return CGSize(width: collectionView.frame.width-15, height: collectionView.frame.height )
     }
    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
        if collectionView == self.LetestCollection{
            return 2
        }
-       return 0
+       return 3
        }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
